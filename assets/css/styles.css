@@ -1,0 +1,473 @@
+/***** BASIC STYLES *****/
+
+/*
+
+Navbar: #8AD562, 138,213,98
+Text: #2A231B, 42,35,27
+Transition Dark: #96E6A1, 150,230,161
+Transition Light: #D4FC79, 212,252,121
+Background: #F7FCF7, 247,252,247
+
+
+
+
+
+*/
+
+/**** General ****/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: #F7FCF7;
+  color: #2A231B;
+  padding-top: 0;
+  position: relative;
+}
+
+section {
+  min-height: 100vh;
+}
+
+header {
+  padding-bottom: 2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Jura", "Lucida Bright", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+}
+
+h4,
+li {
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  list-style-type: none;
+}
+
+p {
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+}
+
+h1 {
+  color: #000000;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.anchor {
+  padding-top: 50px;
+}
+
+a {
+  color: #0DD6C7;
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.btn {
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #000;
+  border: none;
+  color: #F2F2F2;
+  outline: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:visited,
+.btn-primary:active:hover,
+.btn-primary.active:hover {
+  background-color: #0DD6C7;
+  color: #000;
+}
+
+.btn-danger {
+  background: #dd5368;
+
+}
+
+/**** Navbar ****/
+
+.navbar,
+.navbar-toggle {
+  background: #8ad562/*rgba(40, 150, 1, 0.3)*/
+  !important;
+  /*#b9dca9*/
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: transparent;
+  -webkit-transition: background-color 450ms;
+  transition: background-color 450ms;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFF;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+  border-bottom-width: 1.5px;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  color: #FFF !important;
+  background-color: transparent !important;
+  -webkit-transition: color 700ms, background-color 800ms;
+  transition: color 700ms, background-color 800ms;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.me a {
+  color: #FFF;
+  font-size: 1.75em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.me a:hover {
+  color: #000;
+}
+
+/**** Home ****/
+
+#home {
+  /*background: url('../img/rodion-kutsaev-24833.jpg') 50% 0 no-repeat fixed;
+  background: rgb(255, 227, 76);
+  background: -webkit-linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
+  background: -o-linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
+  background: -moz-linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
+  background: linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
+  background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #20E2D7 100%);*/
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 1em;
+}
+
+.home-description {
+  font-size: 2.05em;
+  padding-bottom: 1em;
+}
+
+.home-text h1 {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 10rem;
+  margin-top: 30px;
+  text-transform: capitalize;
+  margin-top: 10rem;
+}
+
+#price-timeline {
+  margin: 30px 0 60px;
+  text-align: center;
+}
+
+#price-timeline .price {
+  display: inline-block;
+  margin: 0 2% 0 0;
+  width: 30%;
+  background: #3e4249;
+  padding: 10px 20px 30px;
+  position: relative;
+  vertical-align: top;
+  min-height: 120px;
+}
+
+#price-timeline .price.active {
+  background: #dd5368;
+}
+
+#price-timeline .price span {
+  background: #101010;
+  color: white;
+  display: block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin-left: -35px;
+}
+
+#price-timeline h4 {
+  margin: 0 0 10px;
+}
+
+#price-timeline h4 small {
+  line-height: 1.73em;
+  color: white;
+  font-weight: bold;
+  display: block;
+  bottom: 0;
+}
+
+.home-img {
+  position: relative;
+  max-height: 90vh;
+  top: 0;
+}
+
+#home button.btn-default {
+  background-color: #F2F2F2;
+  border: #F2F2F2;
+}
+
+#home button.btn-success {
+  background-color: #E5E363;
+  border: #E5E363;
+}
+
+/**** Services ****/
+
+#services {
+  background-color: #D4FC79;
+}
+
+#services-detail {
+  float: none;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.services-columns {
+  text-align: center;
+  padding: 0 3em;
+  vertical-align: bottom;
+}
+
+.services-title {
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+}
+
+.services-description {
+  font-size: 2.25em;
+  padding-bottom: 1em;
+}
+
+/**** About ****/
+
+#work,
+#services,
+#blog,
+#faq,
+#contact,
+#about {
+  margin-top: 70px;
+}
+
+.about-description {
+  font-size: 2.05em;
+}
+
+#about h3 {
+  margin-top: 8px;
+  color: #8ad562;
+}
+
+.cv {
+  text-align: center;
+  margin: 1em;
+  padding-top: 0;
+}
+
+.cv .btn-lg {
+  background-color: #8ad562;
+}
+
+.modal-content {
+  margin: 10px;
+  height: 90vh;
+}
+
+.modal-body {
+  margin: 5px;
+  height: 90%;
+  width: 100%;
+}
+
+#modalembed {
+  height: 100%;
+  width: 100%;
+}
+
+.devicons {
+  font-size: 5em;
+}
+
+/**** Work ****/
+
+#projects {
+  float: none;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.work-img {
+  display: block;
+  margin: 15px auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  bottom: 40%;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  line-height: 1.6;
+  display: none;
+  background-color: rgba(242, 242, 242, 0.9);
+  text-align: center;
+  width: 100%;
+}
+
+.proj-title {
+  font-weight: 900;
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+/**** FAQ ****/
+
+.panel-default > .panel-heading {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+.panel-title a {
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.panel-title a:hover {
+  color: #0DD6C7;
+  -webkit-transition: color 450ms;
+  transition: color 450ms;
+}
+
+.panel-body {
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+}
+
+/**** Contact ****/
+
+#contact {
+  background-color: gainsboro;
+  /*background: #00b09b;
+  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to top, #00b09b, #96c93d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to top, #00b09b, #96c93d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contact-details {
+  width: 80%;
+  float: none;
+  margin: 0 auto;
+
+}
+
+#map {
+  height: 25em;
+  width: 90%;
+  margin-bottom: 1em;
+  border: 0;
+  margin: 0 auto;
+}
+
+.map {
+  height: 25em;
+  margin-bottom: 1em;
+  width: 100%;
+  border: 0;
+}
+
+.font-shadow {
+  color: #F2f2f2;
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+label {
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/**** Footer ****/
+
+footer {
+  background-color: #2A231B;
+  color: #F2F2F2;
+  height: 3.5em;
+  padding: 0.5em;
+}
+
+.copyright {
+  display: inline-block;
+  float: left;
+}
+
+.social {
+  display: inline-block;
+  float: right;
+}
