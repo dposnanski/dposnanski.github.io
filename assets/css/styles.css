@@ -1,4 +1,4 @@
-/***** BASIC STYLES *****/
+/***** BASIC COLOR PALETTE *****/
 
 /*
 
@@ -7,10 +7,12 @@ Text: #2A231B, 42,35,27
 Transition Dark: #96E6A1, 150,230,161
 Transition Light: #D4FC79, 212,252,121
 Background: #F7FCF7, 247,252,247
-
-
-
-
+Links:
+Links hover/active:
+Button default:
+Button primary:
+Button danger:
+Button success:
 
 */
 
@@ -72,23 +74,24 @@ h1 {
 }
 
 a {
-  color: #0DD6C7;
+  color: #2A231B;
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
   text-decoration: none;
 }
+
+/* Buttons */
 
 .btn {
   font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  color: #2A231B;
 }
 
 .btn-primary {
-  background-color: #000;
-  border: none;
-  color: #F2F2F2;
-  outline: none;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
 .btn-primary:hover,
@@ -99,8 +102,8 @@ a {
 .btn-primary:visited,
 .btn-primary:active:hover,
 .btn-primary.active:hover {
-  background-color: #0DD6C7;
-  color: #000;
+  background-color: #8AD562;
+  border: 1px solid transparent;
 }
 
 .btn-danger {
@@ -108,10 +111,15 @@ a {
 
 }
 
+.btn-default {
+  background-color: transparent;
+  border: 1px solid #2A231B;
+}
+
 /**** Navbar ****/
 
 .navbar,
-.navbar-toggle {
+.navbar-inverse .navbar-toggle {
   background: #8ad562/*rgba(40, 150, 1, 0.3)*/
   !important;
   /*#b9dca9*/
@@ -131,6 +139,11 @@ a {
   letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #8AD562;
 }
 
 .navbar-nav > .active > a,
@@ -166,15 +179,6 @@ a {
 /**** Home ****/
 
 #home {
-  /*background: url('../img/rodion-kutsaev-24833.jpg') 50% 0 no-repeat fixed;
-  background: rgb(255, 227, 76);
-  background: -webkit-linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
-  background: -o-linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
-  background: -moz-linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
-  background: linear-gradient(-45deg, rgb(255, 227, 76) 0%, rgb(251, 184, 41) 100%);
-  background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
-  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
-  background-image: linear-gradient(120deg, #d4fc79 0%, #20E2D7 100%);*/
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -253,26 +257,16 @@ a {
   top: 0;
 }
 
-#home button.btn-default {
-  background-color: #F2F2F2;
-  border: #F2F2F2;
-}
-
-#home button.btn-success {
-  background-color: #E5E363;
-  border: #E5E363;
-}
-
 /**** Services ****/
 
-#services {
+#services,
+#contact {
   background-color: #D4FC79;
 }
 
 #services-detail {
   float: none;
   margin: 0 auto;
-  width: 80%;
 }
 
 .services-columns {
@@ -284,7 +278,7 @@ a {
 .services-title {
   font-size: 3em;
   text-align: center;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .services-description {
@@ -347,7 +341,6 @@ a {
 #projects {
   float: none;
   margin: 0 auto;
-  width: 80%;
 }
 
 .work-img {
@@ -355,6 +348,7 @@ a {
   margin: 15px auto;
   max-width: 800px;
   position: relative;
+  border-radius: 25px;
 }
 
 .info {
@@ -401,18 +395,7 @@ a {
 
 /**** Contact ****/
 
-#contact {
-  background-color: gainsboro;
-  /*background: #00b09b;
-  /* fallback for old browsers */
-  /*background: -webkit-linear-gradient(to top, #00b09b, #96c93d);
-  /* Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient(to top, #00b09b, #96c93d);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .contact-details {
-  width: 80%;
   float: none;
   margin: 0 auto;
 
@@ -458,7 +441,7 @@ label {
 footer {
   background-color: #2A231B;
   color: #F2F2F2;
-  height: 3.5em;
+  height: 7em;
   padding: 0.5em;
 }
 

@@ -47,16 +47,16 @@ var services = [
   {
     title: "Translation",
     description: "I specialize in Spanish translation, specifically multimedia content such as websites, films, software, and video games. If you need subtitling, dubbing, localization, transcreation, or proofreading services, you've come to the right place!",
-    button: "More &raquo;",
+    button: "View Options",
     web: "translation.html",
-    startPrice: "Prices start at 25 €"
+    startPrice: ""
   },
   {
-    title: "WP Development",
+    title: "Web Development",
     description: "WordPress is the most used CMS out there. It's a very customizable tool which can help you maintain your online presence (even by yourself). But don't worry, if you want to focus on other things, I can maintain it for you!",
-    button: "More &raquo;",
+    button: "View Options",
     web: "webdev.html",
-    startPrice: "Prices start at 250 €"
+    startPrice: ""
   }
 ];
 

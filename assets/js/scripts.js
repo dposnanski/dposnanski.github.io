@@ -115,7 +115,7 @@ $(document).ready(function () {
       <div class='col-md-6 services-columns'>\
         <h2 class='services-title'>" + services[i].title + "</h2>\
         <p class='services-description'>" + services[i].description + "</p>\
-        <a href='" + services[i].web + "'><button type='button' class='btn btn-primary'>" + services[i].button + "</button></a>\
+        <a href='" + services[i].web + "'><button type='button' class='btn btn-lg btn-primary'>" + services[i].button + "</button></a>\
         <p>" + services[i].startPrice + "</p>\
       </div>\
     ");
@@ -147,7 +147,7 @@ $(document).ready(function () {
   var i = 0;
   while (works[i]) {
     $("#projects").append("\
-      <div class='col-sm-6 col-md-4 col-lg-4 projects'>\
+      <div class='col-sm-6 col-md-4 col-lg-3 projects'>\
         <a href='" + works[i].web + "' class='work-img'>\
           <img class='img-responsive' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
           <span class='info'>\
