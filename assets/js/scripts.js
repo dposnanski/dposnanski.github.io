@@ -122,6 +122,30 @@ $(document).ready(function () {
     i++;
   }
 
+  //About Skills
+  var i = 0;
+  while (skills[i]) {
+    $("#skills-list").append("\
+      <div class='col-xs-2'>\
+        " + skills[i].image + "\
+        <h4>" + skills[i].name + "</h4>\
+      </div>\
+    ");
+    i++;
+  }
+
+  //About Languages
+  var i = 0;
+  while (languages[i]) {
+    $("#language-list").append("\
+      <div class='col-xs-3'>\
+        <img src='" + languages[i].image + "' title='" + languages[i].title + "'>\
+        <h4>" + languages[i].language + "</h4>\
+      </div>\
+    ");
+    i++;
+  }
+
   /*FAQs
   var i = 0;
   while (questions[i]) {

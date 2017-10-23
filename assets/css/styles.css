@@ -32,6 +32,7 @@ body {
 
 section {
   min-height: 100vh;
+  margin-top: 50px;
 }
 
 header {
@@ -60,6 +61,11 @@ li {
 
 p {
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+  font-size: 2.05em;
+}
+
+h3 {
+  color: #8ad562;
 }
 
 h1 {
@@ -124,6 +130,7 @@ a {
   !important;
   /*#b9dca9*/
   border-color: transparent;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-toggle:focus,
@@ -165,14 +172,15 @@ a {
   background-color: transparent;
 }
 
-.me a {
+.navbar-inverse .navbar-brand {
   color: #FFF;
   font-size: 1.75em;
   text-decoration: none;
   text-transform: uppercase;
+  padding-right: 1em;
 }
 
-.me a:hover {
+.navbar-inverse .navbar-brand:hover {
   color: #000;
 }
 
@@ -253,8 +261,10 @@ a {
 
 .home-img {
   position: relative;
-  max-height: 90vh;
-  top: 0;
+  max-height: 80vh;
+  top: 3em;
+  float: none;
+  margin: auto auto;
 }
 
 /**** Services ****/
@@ -288,22 +298,8 @@ a {
 
 /**** About ****/
 
-#work,
-#services,
-#blog,
-#faq,
-#contact,
-#about {
-  margin-top: 70px;
-}
-
-.about-description {
-  font-size: 2.05em;
-}
-
 #about h3 {
   margin-top: 8px;
-  color: #8ad562;
 }
 
 .cv {
@@ -346,7 +342,6 @@ a {
 .work-img {
   display: block;
   margin: 15px auto;
-  max-width: 800px;
   position: relative;
   border-radius: 25px;
 }
@@ -441,11 +436,11 @@ label {
 footer {
   background-color: #2A231B;
   color: #F2F2F2;
-  height: 7em;
+  height: 3.5em;
   padding: 0.5em;
 }
 
-.copyright {
+.footnotes {
   display: inline-block;
   float: left;
 }
