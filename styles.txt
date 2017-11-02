@@ -1,0 +1,257 @@
+section {
+  min-height: 100vh;
+  /*margin-top: 50px;*/
+  padding-bottom: 15px;
+}
+
+header {
+  padding-bottom: 2em;
+}
+
+.btn-danger {
+  background: #dd5368;
+
+}
+
+
+
+
+.row-home {
+  margin-top: 1em;
+}
+
+.home-description {
+  font-size: 2.05em;
+  padding-bottom: 1em;
+}
+
+.home-text h1 {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 5em;
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+
+#price-timeline {
+  margin: 30px 0 60px;
+  text-align: center;
+}
+
+#price-timeline .price {
+  display: inline-block;
+  margin: 0 2% 0 0;
+  width: 30%;
+  background: #3e4249;
+  padding: 10px 20px 30px;
+  position: relative;
+  vertical-align: top;
+  min-height: 120px;
+}
+
+#price-timeline .price.active {
+  background: #dd5368;
+}
+
+#price-timeline .price span {
+  background: #101010;
+  color: white;
+  display: block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin-left: -35px;
+}
+
+#price-timeline h4 {
+  margin: 0 0 10px;
+}
+
+#price-timeline h4 small {
+  line-height: 1.73em;
+  color: white;
+  font-weight: bold;
+  display: block;
+  bottom: 0;
+}
+
+.home-img {
+  position: relative;
+  max-height: 75vh;
+  top: 0.25em;
+  margin-bottom: 15px;
+  float: none;
+  margin: auto auto;
+}
+
+/**** Services ****/
+
+#services,
+#contact {
+  background-color: #D4FC79;
+}
+
+#services-detail {
+  float: none;
+  margin: 0 auto;
+}
+
+.services-columns {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.services-title {
+  font-size: 3em;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.services-description {
+  font-size: 2.25em;
+  padding-bottom: 1em;
+}
+
+/**** About ****/
+
+#about h3 {
+  margin-top: 8px;
+}
+
+.cv {
+  text-align: center;
+  margin: 1em;
+  padding-top: 0;
+}
+
+.cv .btn-lg {
+  background-color: #8ad562;
+}
+
+.modal-content {
+  margin: 10px;
+  height: 90vh;
+}
+
+.modal-body {
+  margin: 5px;
+  height: 90%;
+  width: 100%;
+}
+
+#modalembed {
+  height: 100%;
+  width: 100%;
+}
+
+.img-lang {
+  margin: 0 auto;
+}
+
+/**** Work ****/
+
+#projects {
+  float: none;
+  margin: 0 auto;
+}
+
+.work-img {
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  border-radius: 25px;
+}
+
+.info {
+  position: absolute;
+  bottom: 25%;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  line-height: 1.6;
+  display: none;
+  background-color: rgba(242, 242, 242, 0.9);
+  text-align: center;
+  width: 100%;
+}
+
+.proj-title {
+  font-weight: 900;
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+/**** FAQ ****/
+
+.panel-default > .panel-heading {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+.panel-title a {
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.panel-title a:hover {
+  color: #0DD6C7;
+  -webkit-transition: color 450ms;
+  transition: color 450ms;
+}
+
+.panel-body {
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+}
+
+/**** Contact ****/
+
+.contact-details {
+  float: none;
+  margin: 0 auto;
+
+}
+
+#map {
+  height: 25em;
+  width: 90%;
+  margin-bottom: 1em;
+  border: 0;
+  margin: 0 auto;
+}
+
+.map {
+  height: 25em;
+  margin-bottom: 1em;
+  width: 100%;
+  border: 0;
+}
+
+.font-shadow {
+  color: #F2f2f2;
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+label {
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+}

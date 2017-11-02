@@ -7,54 +7,40 @@ var works = [
     web: "jardin.html"
   },
   {
-    title: "Portraits",
-    description: "Photo Editing",
-    pic: "../assets/img/photoedit.jpg",
-    alt: "Photo Editing: Sales Personnel Portraits",
-    web: "photoedits.html"
-  },
-  {
-    title: "catCulator",
-    description: "JS + jQuery Exercise",
-    pic: "../assets/img/catculator.jpg",
-    alt: "JS/jQuery: The catCulator",
-    web: "catculator.html"
-  },
-  {
     title: "Qeep",
     description: "App Translation",
-    pic: "../assets/img/coming%20soon.jpg",
+    pic: "../assets/img/qeep.png",
     alt: "App Translation: Qeep",
     web: "qeep.html"
   },
   {
-    title: "Avory",
+    title: "Jobfox",
     description: "App Translation",
-    pic: "../assets/img/coming%20soon.jpg",
-    alt: "App Translation: Avory",
-    web: "avory.html"
+    pic: "../assets/img/jobfox.png",
+    alt: "App Translation: Jobfox",
+    web: "jobfox.html"
   },
   {
-    title: "Next",
+    title: "Nocturnalia",
     description: "Something Cool",
-    pic: "../assets/img/blueglassballs.jpg",
-    alt: "Next Project: Something Cool",
-    web: "cool.html"
+    pic: "../assets/img/nocturnalia.png",
+    alt: "Web Development: Nocturnalia",
+    web: "nocturnalia.html"
   }
 ];
 
 var services = [
   {
     title: "Translation",
-    description: "I specialize in Spanish translation, specifically multimedia content such as websites, films, software, and video games. If you need subtitling, dubbing, localization, transcreation, or proofreading services, you've come to the right place!",
-    button: "View Options",
+    description: "I specialize in Spanish translation, specifically multimedia content such as websites, videos, software, and video games. If you need subtitling, dubbing, localization, transcreation, or proofreading services, I can help you!",
+    button: "Request Quote",
     web: "translation.html",
     startPrice: ""
   },
   {
     title: "Web Development",
-    description: "WordPress is the most used CMS out there. It's a very customizable tool which can help you maintain your online presence (even by yourself). But don't worry, if you want to focus on other things, I can maintain it for you!",
-    button: "View Options",
+    description: "I can help you get an astonishingly cool website. Whether it's for a non-profit project, an e-commerce website, a blog, or a professional website showcasing your skills and services, I guarantee you will love the design!",
+    button: "Request Quote",
     web: "webdev.html",
     startPrice: ""
   }
@@ -91,24 +77,70 @@ var skills = [
 var languages = [
   {
     language: "Spanish",
-    image: "https://png.icons8.com/sombrero/color/96",
+    image: "../assets/img/icons8-sombrero.png",
     title: "Sombrero"
   },
   {
     language: "English",
-    image: "https://png.icons8.com/us-capitol/color/96",
+    image: "../assets/img/icons8-us-capitol.png",
     title: "US Capitol"
   },
   {
     language: "German",
-    image: "https://png.icons8.com/german-shepherd/color/96",
+    image: "../assets/img/icons8-german-shepherd.png",
     title: "German Shepherd"
   },
   {
     language: "Italian",
-    image: "https://png.icons8.com/spaghetti/color/96",
+    image: "../assets/img/icons8-spaghetti.png",
     title: "Spaghetti"
   }
+];
+
+var socials = [
+  {
+    web: "https://facebook.com/dposnanski",
+    image: "../assets/img/icons8-facebook.png",
+    icon: "fa-facebook",
+    label: "Facebook"
+  },
+
+  {
+    web: "https://linkedin.com/in/dposnanski",
+    image: "../assets/img/icons8-linkedin.png",
+    icon: "fa-linkedin",
+    label: "Linkedin"
+  },
+  {
+    web: "https://github.com/dposnanski",
+    image: "../assets/img/icons8-github.png",
+    icon: "fa-github",
+    label: "Github"
+  }
+  /*{
+    web: "https://twitter.com/dposnanski",
+    image: "../assets/img/icons8-twitter-squared.png",
+    icon: "fa-twitter",
+    label: "Twitter"
+  },
+  {
+    web: "https://instagram.com/dposnanski",
+    image: "../assets/img/icons8-instagram.png",
+    icon: "fa-instagram",
+    label: "Instagram"
+  },
+  {
+    web: "https://youtube.com/c/DeliePosnanski",
+    image: "../assets/img/icons8-youtube-filled.png",
+    icon: "fa-youtube",
+    label: "Youtube"
+  },
+  {
+    web: "https://pinterest.com/dposnanski",
+    image: "../assets/img/icons8-pinterest.png",
+    icon: "fa-pinterest",
+    label: "Pinterest"
+  }*/
 ];
 
 /*var questions = [

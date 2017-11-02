@@ -64,8 +64,14 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
 
+  //Contact
+  var base64_email = 'aGVsbG9AZGVsaWUubWU=';
+  var base_url = '//formspree.io/';
+  var action = base_url + atob(base64_email);
+  $('#contact-form').attr('action', action);
+
   //Button
-  $("#button").on("click", function () {
+  /*$("#button").on("click", function () {
     var validateData = function (id) {
       var field = $("#" + id).val();
       if (field === "") {
@@ -82,22 +88,21 @@ $(document).ready(function () {
     var name = validateData("name");
     var email = validateData("email");
     var message = validateData("message");
-    var phone = $(".phone").val();
+    var data = validateData("data");
     if (!name || !email || !message) {
       $("#phone").css("border", "1px solid #CCC");
     } else {
       $(".message").hide();
       $(".email").hide();
-      $(".phone").hide();
       $(".name").hide();
       $("#char-count").hide();
       $("#visible-message").html("Great! Thanks for sending me a message, I'll get back to you soon :-)").show();
     }
     return false;
-  });
+  });*/
 
   //Character Count
-  $(".message").on("keyup", function () {
+  /*$(".message").on("keyup", function () {
     var charCount = $(".message").val().length;
     $("#char-count").html("You have typed " + charCount + " characters.");
     if (charCount > 50) {
@@ -106,7 +111,7 @@ $(document).ready(function () {
       $("#char-count").css("color", "#000");
     }
     console.log(charCount);
-  });
+  });*/
 
   //Services
   var i = 0;
@@ -126,9 +131,9 @@ $(document).ready(function () {
   var i = 0;
   while (skills[i]) {
     $("#skills-list").append("\
-      <div class='col-xs-2'>\
+      <div class='col-xs-3 col-sm-4 skill-img'>\
         " + skills[i].image + "\
-        <h4>" + skills[i].name + "</h4>\
+        <h5>" + skills[i].name + "</h5>\
       </div>\
     ");
     i++;
@@ -139,8 +144,8 @@ $(document).ready(function () {
   while (languages[i]) {
     $("#language-list").append("\
       <div class='col-xs-3'>\
-        <img src='" + languages[i].image + "' title='" + languages[i].title + "'>\
-        <h4>" + languages[i].language + "</h4>\
+        <img src='" + languages[i].image + "' title='" + languages[i].title + "' class='img-responsive img-lang text-center'>\
+        <h5 class='text-center'>" + languages[i].language + "</h5>\
       </div>\
     ");
     i++;
@@ -171,9 +176,9 @@ $(document).ready(function () {
   var i = 0;
   while (works[i]) {
     $("#projects").append("\
-      <div class='col-sm-6 col-md-4 col-lg-3 projects'>\
+      <div class='col-sm-5 col-md-4 col-lg-3 projects'>\
         <a href='" + works[i].web + "' class='work-img'>\
-          <img class='img-responsive' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
+          <img class='img-responsive work-img' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
           <span class='info'>\
             <h3 class='proj-title'>" + works[i].title + "</h3>\
             <p>" + works[i].description + "</p>\
@@ -188,6 +193,21 @@ $(document).ready(function () {
   }).mouseleave(function () {
     $(".info", this).hide();
   });
+
+
+  //Social Icons
+  var i = 0;
+  while (socials[i]) {
+    $("#social").append("\
+      <a href='" + socials[i].web + "' target='_blank'>\
+        <span>\
+          <i class='fa " + socials[i].icon + " fa-icon' aria-hidden='true' aria-label='" + socials[i].label + "'>\
+          </i>\
+        </span>\
+      </a>\
+    ");
+    i++;
+  }
 
 
   //Parallax Effect
