@@ -28,14 +28,16 @@ body {
   background-attachment: fixed;
   background-color: #F7FCF7;
   color: #2A231B;
-  /*padding-top: 0;
-  position: relative;*/
+  /*padding-top: 0;*/
+  position: relative;
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
 }
 
 h1 {
   font-size: 4em;
   text-align: center;
   margin-top: 10px;
+  padding-bottom: 1em;
 }
 
 h1,
@@ -62,7 +64,8 @@ li {
   list-style-type: none;
 }
 
-p {
+p,
+.form-check-inbox {
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
   font-size: 2.05em;
   color: #2A231B;
@@ -72,6 +75,10 @@ a {
   color: #2A231B;
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
   text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
 }
 
 .row {
@@ -228,6 +235,10 @@ a {
   margin-top: 8px;
 }
 
+svg {
+  max-width: 100px;
+}
+
 .cv {
   text-align: center;
   margin: 1em;
@@ -238,18 +249,18 @@ a {
   background-color: #8ad562;
 }
 
-#about > .modal-content {
-  margin: 10px;
+.cv .modal-content {
+  margin: 1em;
   height: 90vh;
 }
 
-#about > .modal-body {
+.cv .modal-body {
   margin: 5px;
   height: 90%;
   width: 100%;
 }
 
-#about > #modalembed {
+.cv #modalembed {
   height: 100%;
   width: 100%;
 }
@@ -284,7 +295,7 @@ a {
 .services-title {
   font-size: 3em;
   text-align: center;
-  padding: 1em 0 0.5em;
+  padding: 0 0 0.5em;
 }
 
 .services-description {
@@ -333,6 +344,15 @@ a {
 
 .form-group {
   padding: 0;
+}
+
+.contact-form {
+  padding-bottom: 1em;
+}
+
+.contact-form a:hover {
+  color: #8AD562;
+  text-decoration: none;
 }
 
 /**** Footer ****/
@@ -420,6 +440,18 @@ footer {
   padding: 10px;
 }
 
+.privacy-text {
+  padding: 10px;
+  color: #2A231B;
+}
+
+.privacy-text h2,
+.privacy-text ul li,
+.privacy-text h5 {
+  text-align: left;
+  line-height: 1.76em;
+}
+
 /* Large desktops and laptops */
 
 @media (min-width: 1200px) {
@@ -445,7 +477,25 @@ footer {
 
 /* Landscape tablets and medium desktops */
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #home {
+    background: url('../img/me.jpg') 10% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+
+  .home-text h1 {
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .home-description {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #resume {
+    padding-left: 3em;
+  }
+}
 
 /* Portrait tablets and small desktops */
 
@@ -466,6 +516,10 @@ footer {
   .home-description {
     text-align: center;
     font-size: 3em;
+  }
+
+  #resume {
+    padding-left: 3em;
   }
 
 }

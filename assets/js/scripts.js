@@ -131,7 +131,7 @@ $(document).ready(function () {
   var i = 0;
   while (skills[i]) {
     $("#skills-list").append("\
-      <div class='col-xs-3 col-sm-4 skill-img'>\
+      <div class='col-xs-3 col-sm-3 col-xl-2 skill-img'>\
         " + skills[i].image + "\
         <h5>" + skills[i].name + "</h5>\
       </div>\

@@ -129,17 +129,17 @@
           <div class="cv">
             <!-- cv button -->
             <!-- Large modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">View my resume</button>
-            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static" data-keyboard="false">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".resume-modal">View my resume</button>
+            <div class="modal fade resume-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static" data-keyboard="false">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
-                                        </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">   <span aria-hidden="true">×</span>
+                    </button>
                     <h4 class="modal-title" id="myModalLabel">Resume</h4>
                   </div>
                   <div class="modal-body">
-                    <embed id="modalembed" src="assets/pdf/Delie%20Posnanski%20CV%20En%20II.pdf">
+                    <embed id="modalembed" src="assets/pdf/EN%20Resume%20Delie%20Posnanski.pdf">
                   </div>
                 </div>
               </div>
@@ -214,27 +214,22 @@
             <div class="form-group col-xs-12">
               <label for="name" class="sr-only">Name *</label>
               <input title="This is a required field." required="required" placeholder="What's your name?" class="form-control name" type="text" id="name" name="name">
-              <p id="visible-name"></p>
             </div>
             <div class="form-group col-xs-12">
               <label for="email" class="sr-only">Email *</label>
               <input required="required" placeholder="To which email should I send my reply?" class="form-control email" type="email" id="email" name="_replyto">
-              <p id="visible-email"></p>
             </div>
             <div class="form-group col-xs-12">
               <label for="name" class="sr-only">I'll be happy to hear from you, let me know your thoughts!</label>
               <textarea title="Please fill this out." required="required" placeholder="I'll be happy to hear from you, let me know your thoughts!" class="form-control message" cols="15" rows="15" id="message"></textarea>
-              <p id="char-count"></p>
-              <p id="visible-message"></p>
-              <!--<div class="form-group col-sm-12 checkbox-inline">
-                <label for="data" class="sr-only">Treatment of Personal Data</label>
-                <input type="checkbox" value="" required="required" id="data" class="form-check-inbox">
-                <p>I understand you will use my information to contact me *</p>
-                <p id="visible-data"></p>
-              </div>
-              <div class="form-group col-sm-12 g-recaptcha" data-sitekey="6LdALTYUAAAAAC6BNld9MDRCcSeieULV2etwDV1q"></div>-->
-              <button type="submit" class="btn btn-primary btn-lg btn-block" value="send" id="button">Send</button>
             </div>
+            <div class="form-group col-sm-12 checkbox">
+              <label>
+              <input type="checkbox" value="" required="required" id="data" class="form-check-inbox">I agree to the treatment of my personal data according to the <a data-toggle="modal" data-target=".privacy-modal">Privacy Policy</a>.*
+              </label>
+            </div>
+            <!-- <div class="form-group col-sm-12 g-recaptcha" data-sitekey="6LdALTYUAAAAAC6BNld9MDRCcSeieULV2etwDV1q"></div>-->
+            <button type="submit" class="btn btn-primary btn-lg btn-block" value="send" id="button">Send</button>
           </form>
         </div>
         <!-- end contact-form -->
@@ -267,7 +262,7 @@
           <a data-toggle="modal" data-target=".privacy-modal"> Privacy & Cookies</a>
           <div class="modal fade privacy-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
             <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
+              <div class="modal-content privacy-text">
                 <h1>Privacy & Cookie Policy</h1>
                 <h2>TL;DR</h2>
                 <ul>
@@ -276,7 +271,9 @@
                   <li>I won't send you advertisements.</li>
                   <li>Changes can be made to this Privacy & Cookie Policy. The Policy will always show the date in which it was last updated.</li>
                 </ul>
-                <p>Last updated on November 2, 2017</p>
+                <h2>Full Policy</h2>
+                <p>Collection and use of information on this site delie.me is used in accordance with the article 13 of the Italian Legislative Decree 196/2003. </p>
+                <h5>Last updated on November 2, 2017</h5>
               </div>
             </div>
           </div>
@@ -306,7 +303,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-gVihUqC4BDUV9OSbOvY1HIJ_eyFn42U&callback=initMap"></script>-->
 
 
-
+  <script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
 
 </body>
 
