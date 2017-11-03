@@ -34,14 +34,14 @@ function toggleBounce() {
 $(document).ready(function () {
 
   // Facebook
-  (function (d, s, id) {
+  /*(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s);
     js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1818132841733925";
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+  }(document, 'script', 'facebook-jssdk'));*/
 
   // Smooth scrolling
   var $root = $('html, body');
@@ -131,7 +131,7 @@ $(document).ready(function () {
   var i = 0;
   while (skills[i]) {
     $("#skills-list").append("\
-      <div class='col-xs-3 col-sm-3 col-xl-2 skill-img'>\
+      <div class='col-xs-3 col-sm-3 col-md-2 col-xl-2 skill-img'>\
         " + skills[i].image + "\
         <h5>" + skills[i].name + "</h5>\
       </div>\
@@ -176,9 +176,9 @@ $(document).ready(function () {
   var i = 0;
   while (works[i]) {
     $("#projects").append("\
-      <div class='col-sm-5 col-md-4 col-lg-3 projects'>\
+      <div class='col-sm-6 col-md-4 col-lg-3 projects'>\
         <a href='" + works[i].web + "' class='work-img'>\
-          <img class='img-responsive work-img' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
+          <img class='img-responsive work-logo' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
           <span class='info'>\
             <h3 class='proj-title'>" + works[i].title + "</h3>\
             <p>" + works[i].description + "</p>\

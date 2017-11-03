@@ -21,7 +21,8 @@ h3: 8ad562
 
 * {
   box-sizing: border-box;
-  /*border: 1px solid red;*/
+  /*border: 1px solid black;
+  */
 }
 
 body {
@@ -37,7 +38,7 @@ h1 {
   font-size: 4em;
   text-align: center;
   margin-top: 10px;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 h1,
@@ -201,7 +202,7 @@ section {
 /**** Home ****/
 
 #home {
-  background: url('../img/me.jpg') 140% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -270,8 +271,8 @@ svg {
 }
 
 .wink {
-  width: 1.25em;
-  height: 1.25em;
+  width: 1em;
+  height: 1em;
 }
 
 /**** Services ****/
@@ -288,8 +289,7 @@ svg {
 
 .services-columns {
   text-align: center;
-  vertical-align: bottom;
-  padding: 5px;
+  padding: 0 1em;
 }
 
 .services-title {
@@ -304,6 +304,10 @@ svg {
 
 /**** Work ****/
 
+#work {
+  padding-bottom: 1em;
+}
+
 #projects {
   float: none;
   margin: 0 auto;
@@ -311,17 +315,20 @@ svg {
 
 .work-img {
   display: block;
-  margin: 15px auto;
+  max-width: 800px;
   position: relative;
+}
+
+.work-logo {
   border-radius: 25px;
 }
 
 .info {
   position: absolute;
-  bottom: 25%;
+  bottom: 28%;
   color: #000;
   font-weight: bold;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.0234em;
   line-height: 1.6;
   display: none;
   background-color: rgba(242, 242, 242, 0.9);
@@ -332,7 +339,7 @@ svg {
 .proj-title {
   font-weight: 900;
   font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -342,11 +349,7 @@ svg {
 
 /**** Contact ****/
 
-.form-group {
-  padding: 0;
-}
-
-.contact-form {
+.contact-details {
   padding-bottom: 1em;
 }
 
@@ -455,22 +458,26 @@ footer {
 /* Large desktops and laptops */
 
 @media (min-width: 1200px) {
-  #home {
-    background: url('../img/me.jpg') 780px 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  }
-
   .home-text {
     background-color: transparent;
   }
 
   .home-text h1 {
     font-size: 5em;
-    text-align: center;
+    text-align: left;
   }
 
   .home-description {
-    text-align: center;
+    text-align: left;
     font-size: 2.05em;
+  }
+
+  #who {
+    padding: 0 15px 0 1em;
+  }
+
+  #table {
+    padding: 0 0 0 15px;
   }
 
 }
@@ -484,16 +491,24 @@ footer {
 
   .home-text h1 {
     font-size: 5em;
-    text-align: center;
+    text-align: left;
   }
 
   .home-description {
-    text-align: center;
+    text-align: left;
     font-size: 3em;
   }
 
-  #resume {
-    padding-left: 3em;
+  #who {
+    padding: 0 15px 0 0;
+  }
+
+  #table {
+    padding: 0 0 0 15px;
+  }
+
+  .projects {
+    padding: 0 0 1em 1em;
   }
 }
 
@@ -501,7 +516,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991px) {
   #home {
-    background: url('../img/me.jpg') 100% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background: url('') 100% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   }
 
   .home-text {
@@ -522,13 +537,17 @@ footer {
     padding-left: 3em;
   }
 
+  .projects {
+    padding: 0 0 1em 1em;
+  }
+
 }
 
 /* Landscape phones and portrait tablets */
 
 @media (max-width: 767px) {
   #home {
-    background: url('../img/me.jpg') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background: url('') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   }
 
   .home-text {
@@ -544,17 +563,29 @@ footer {
     font-size: 1.75em;
     text-align: center;
   }
+
+  .projects {
+    padding: 0 0 1em 1em;
+  }
 }
 
 /* Portrait phones and smaller */
 
 @media (max-width: 480px) {
   #home {
-    background: url('../img/me.jpg') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background: url('../img/me.jpg') 50% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   }
 
   .home-text {
     background-color: rgba(255, 255, 255, .45);
+  }
+
+  .home-text h1 {
+    padding-bottom: 0.15em;
+  }
+
+  .home-description {
+    padding-bottom: 0;
   }
 
   h1 {
@@ -568,10 +599,16 @@ footer {
   }
 
   #about {
+    margin: 0 15px;
     text-align: center;
   }
 
-  /*navbar-inverse .navbar-nav > .dropdown-menu {
+  .projects {
+    padding: 1em;
+  }
+}
+
+/*navbar-inverse .navbar-nav > .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -622,4 +659,5 @@ footer {
     display: inline;
     line-height: 3em;
   }*/
+
 }

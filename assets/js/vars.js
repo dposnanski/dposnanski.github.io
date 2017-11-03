@@ -6,7 +6,7 @@ var works = [
     alt: "WordPress Website Design: El Jardín Vegano",
     web: "jardin.html"
   },
-  {
+  /*{
     title: "Qeep",
     description: "App Translation",
     pic: "../assets/img/qeep.png",
@@ -19,7 +19,7 @@ var works = [
     pic: "../assets/img/jobfox.png",
     alt: "App Translation: Jobfox",
     web: "jobfox.html"
-  },
+  },*/
   {
     title: "Nocturnalia",
     description: "Something Cool",

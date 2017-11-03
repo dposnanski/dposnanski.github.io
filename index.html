@@ -9,6 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Jura|Economica" rel="stylesheet">
@@ -77,22 +78,22 @@
 
     <section class="container-fluid anchor row-home" id="home">
       <!-- data-type="background" data-speed="2" -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 home-text">
+      <div class="row row-home">
+        <div class="col-xs-12 col-md-offset-1 col-md-5 home-text">
           <h1>Hello!<br> I'm Delie</h1>
           <p class="home-description">I'm a Spanish translator and web developer focused on all the green things in life. Like avocados, and animal rights, and plant-based living, and veganism, and veganic gardening... did I mention I like green stuff? Yeah, you get the idea... I craft websites and words that will shift the mind of your audience (and the world) for the better.</p>
           <div class="row text-center">
-            <div class="col-xs-12 hidden-xs hidden-sm col-md-5">
+            <div class="hidden-xs hidden-sm col-md-6">
               <a href="#services"><button type="button" class="btn btn-lg btn-default">Learn more</button></a>
             </div>
-            <div class="col-xs-12 col-md-5">
+            <div class="col-xs-12 col-md-6">
               <a href="#contact"><button type="button" class="btn btn-lg btn-primary">Get in touch</button></a>
             </div>
           </div>
         </div>
-        <!--<div class="col-xs-12 col-sm-5">
+        <div class="hidden-xs hidden-sm col-md-5">
           <img src="assets/img/me.jpg" alt="Delie Posnanski" class="img-responsive">
-        </div>-->
+        </div>
       </div>
     </section>
 
@@ -104,14 +105,15 @@
       </header>
       <!-- end header -->
       <div class="row">
-        <div class="col-sm-offset-1 col-sm-5" id="who">
+        <div class="col-xs-12 col-md-offset-1 col-md-5" id="who">
           <p class="about-description">Have you got no website at all? If you do, do you look at it and sigh? What about your content? Are you ready to expand and make it available in the second most spoken language in the world? Of course you are!</p>
-          <p class="about-description">If your focus is to show people all the good that green can do, then we are on the same page. I can help you reach (and enchant) a wider audience by providing you with a beautiful, modern and user-friendly website, and transform your text into some delicious Mexican guacamole! (Can you guess which Spanish variant I specialize in? <img src="assets/img/icons8-wink.png" class="wink">)</p>
+          <p class="about-description">If your focus is to show people all the good that green can do, then we are on the same page. I can help you reach (and enchant) a wider audience by providing you with a beautiful, modern and user-friendly website, and transform your text into some delicious Mexican guacamole! </p>
+          <p class="about-description">Can you guess which Spanish variant I specialize in?<img src="assets/img/icons8-wink.png" class="wink"></p>
 
           <!-- end row -->
         </div>
         <!-- end about -->
-        <div class="col-sm-5" id="resume">
+        <div class="col-xs-12 col-md-5" id="table">
           <div class="row text-center">
             <div class="col-sm-12" id="skills">
               <h3>What I bring to the table</h3>
@@ -126,21 +128,23 @@
             <!-- end skills -->
           </div>
           <!-- end row -->
-          <div class="cv">
-            <!-- cv button -->
-            <!-- Large modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".resume-modal">View my resume</button>
-            <div class="modal fade resume-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static" data-keyboard="false">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">   <span aria-hidden="true">×</span>
+        </div>
+      </div>
+      <div class="row cv">
+        <div class="col-xs-12" id="who">
+          <!-- cv button -->
+          <!-- Large modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".resume-modal">View my resume</button>
+          <div class="modal fade resume-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">   <span aria-hidden="true">×</span>
                     </button>
-                    <h4 class="modal-title" id="myModalLabel">Resume</h4>
-                  </div>
-                  <div class="modal-body">
-                    <embed id="modalembed" src="assets/pdf/EN%20Resume%20Delie%20Posnanski.pdf">
-                  </div>
+                  <h4 class="modal-title" id="myModalLabel">Resume</h4>
+                </div>
+                <div class="modal-body">
+                  <embed id="modalembed" src="assets/pdf/EN%20Resume%20Delie%20Posnanski.pdf">
                 </div>
               </div>
             </div>
@@ -157,9 +161,8 @@
         <h1>Services</h1>
       </header>
       <!--end header -->
-      <div class="row sub-row">
-        <div class="col-sm-offset-1 col-sm-10" id="services-detail">
-
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10" id="services-detail">
         </div>
       </div>
       <!-- end row -->
@@ -167,14 +170,13 @@
 
     <!-- ============ PORTFOLIO ============ -->
 
-    <section class="container-fluid anchor" id="work">
+    <section class="container-fluid anchor text-center" id="work">
       <header>
         <h1>Portfolio</h1>
       </header>
       <!-- end header -->
       <div class="row">
-        <div class="col-sm-offset-1 col-sm-10" id="projects">
-
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10" id="projects">
         </div>
       </div>
       <!-- end row -->
@@ -209,7 +211,7 @@
       </header>
       <!--end header -->
       <div class="row contact-details">
-        <div class="col-xs-12 contact-form">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 contact-form">
           <form action="HIDDEN" method="post" id="contact-form" role="form">
             <div class="form-group col-xs-12">
               <label for="name" class="sr-only">Name *</label>
@@ -217,19 +219,30 @@
             </div>
             <div class="form-group col-xs-12">
               <label for="email" class="sr-only">Email *</label>
-              <input required="required" placeholder="To which email should I send my reply?" class="form-control email" type="email" id="email" name="_replyto">
+              <input required="required" placeholder="What's your email?" class="form-control email" type="email" id="email" name="_replyto">
+            </div>
+            <div class="form-group col-xs-12">
+              <label for="subject" class="sr-only">Subject *</label>
+              <select class="form-control" required="required">
+                <option>Translation related services</option>
+                <option>Web development services</option>
+                <option>Other</option>
+              </select>
             </div>
             <div class="form-group col-xs-12">
               <label for="name" class="sr-only">I'll be happy to hear from you, let me know your thoughts!</label>
               <textarea title="Please fill this out." required="required" placeholder="I'll be happy to hear from you, let me know your thoughts!" class="form-control message" cols="15" rows="15" id="message"></textarea>
             </div>
-            <div class="form-group col-sm-12 checkbox">
+
+            <div class="form-group col-xs-12 checkbox">
               <label>
               <input type="checkbox" value="" required="required" id="data" class="form-check-inbox">I agree to the treatment of my personal data according to the <a data-toggle="modal" data-target=".privacy-modal">Privacy Policy</a>.*
               </label>
             </div>
             <!-- <div class="form-group col-sm-12 g-recaptcha" data-sitekey="6LdALTYUAAAAAC6BNld9MDRCcSeieULV2etwDV1q"></div>-->
-            <button type="submit" class="btn btn-primary btn-lg btn-block" value="send" id="button">Send</button>
+            <div class="form-group col-xs-12">
+              <button type="submit" class="btn btn-primary btn-lg btn-block" value="send" id="button">Send</button>
+            </div>
           </form>
         </div>
         <!-- end contact-form -->
@@ -240,7 +253,6 @@
   </main>
 
   <!-- ============ FOOTER ============ -->
-  <!-- Icons: https://icons8.com/ & http://konpa.github.io/devicon/ (NEED TO ADD TO CREDITS PAGE!!) -->
 
   <footer>
     <div class="row">
@@ -287,24 +299,12 @@
 
   <!-- ============ JAVASCRIPT ============ -->
 
-
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/js/jquery-3.2.1.min.js"></script>-->
   <script src="assets/js/jquery-2.2.4.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/vars.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/07439a54c4.js"></script>
-
-  <!--
-  <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&amp;appId=1818132841733925"></script>
-  <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-gVihUqC4BDUV9OSbOvY1HIJ_eyFn42U&callback=initMap"></script>-->
-
-
-  <script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
-
 </body>
 
 </html>
