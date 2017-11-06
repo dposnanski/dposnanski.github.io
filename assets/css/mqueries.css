@@ -1,0 +1,220 @@
+/* Large desktops and laptops XL*/
+
+@media (min-width: 1200px) {
+  .home-text {
+    background-color: transparent;
+  }
+
+  .home-text h1 {
+    font-size: 5em;
+    text-align: left;
+  }
+
+  .home-description {
+    text-align: left;
+    font-size: 2.05em;
+  }
+
+  #who {
+    padding: 0 15px 0 1em;
+  }
+
+  #table {
+    padding: 0 0 0 15px;
+  }
+
+  #work {
+    max-height: 100vh;
+  }
+
+  .projects {
+    padding: 0 1em 1em 0;
+  }
+
+}
+
+/* Landscape tablets and medium desktops MD*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #home {
+    background: url('../img/me.jpg') 20% -10% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-size: cover;
+  }
+
+  .home-text {
+    background-color: rgba(255, 255, 255, .45);
+  }
+
+  .home-text h1 {
+    font-size: 5em;
+    text-align: left;
+  }
+
+  .home-description {
+    text-align: left;
+    font-size: 3em;
+  }
+
+  #who {
+    padding: 0 15px 0 0;
+  }
+
+  #table {
+    padding: 0 0 0 15px;
+  }
+
+  .projects {
+    padding: 0 1em 1em 0;
+  }
+}
+
+/* Portrait tablets and small desktops SM*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #home {
+    background: url('../img/me.jpg') 100% 100% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-size: cover;
+  }
+
+  .home-text {
+    background-color: rgba(255, 255, 255, .45);
+  }
+
+  .home-text h1 {
+    font-size: 7em;
+    text-align: center;
+  }
+
+  .home-description {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #resume {
+    padding-left: 3em;
+  }
+
+  .projects {
+    padding: 0 0 1em 1em;
+  }
+
+}
+
+/* Landscape phones and portrait tablets XS*/
+
+@media (max-width: 767px) {
+  #home {
+    background: url('../img/me.jpg') 60% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-size: cover;
+  }
+
+  .home-text {
+    background-color: rgba(255, 255, 255, .45);
+  }
+
+  .home-text h1 {
+    font-size: 3.75em;
+    text-align: center;
+  }
+
+  .home-description {
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  .projects {
+    padding: 1em;
+  }
+}
+
+/* Portrait phones and smaller XXS */
+
+@media (max-width: 480px) {
+  #home {
+    background: url('../img/me.jpg') 50% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-size: cover;
+  }
+
+  .home-text {
+    background-color: rgba(255, 255, 255, .45);
+  }
+
+  .home-text h1 {
+    padding-bottom: 0.15em;
+  }
+
+  .home-description {
+    padding-bottom: 0;
+  }
+
+  h1 {
+    font-size: 3.75em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  #about {
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  .projects {
+    padding: 1em;
+  }
+}
+
+/*navbar-inverse .navbar-nav > .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 60px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1.5em;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(1, 1, 1, .9);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+
+  .dropdown {
+    margin-top: -2px;
+  }
+
+  .dropdown-menu {
+    top: 81.6px;
+    font-size: 1em;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: inherit;
+  }
+
+  .navbar-collapse.collapse.in {
+    min-height: 96vh;
+    font-size: 3em;
+    text-align: center;
+    transition: width 2s linear 1s;
+  }
+
+  .navbar-nav > li > a {
+    line-height: 15vh;
+  }
+
+  .nav > li > a.lang-inline {
+    display: inline;
+    line-height: 3em;
+  }*/

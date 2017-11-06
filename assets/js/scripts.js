@@ -131,7 +131,7 @@ $(document).ready(function () {
   var i = 0;
   while (skills[i]) {
     $("#skills-list").append("\
-      <div class='col-xs-3 col-sm-3 col-md-2 col-xl-2 skill-img'>\
+      <div class='col-xs-3 col-sm-3 col-lg-2 skill-img'>\
         " + skills[i].image + "\
         <h5>" + skills[i].name + "</h5>\
       </div>\
@@ -172,16 +172,17 @@ $(document).ready(function () {
 
 
 
-  //Portfolio
+  //Work
   var i = 0;
   while (works[i]) {
     $("#projects").append("\
-      <div class='col-sm-6 col-md-4 col-lg-3 projects'>\
-        <a href='" + works[i].web + "' class='work-img'>\
+      <div class='col-sm-6 projects'>\
+        <a href='" + works[i].web + "' class='work-img' target='_blank'>\
           <img class='img-responsive work-logo' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
           <span class='info'>\
             <h3 class='proj-title'>" + works[i].title + "</h3>\
-            <p>" + works[i].description + "</p>\
+            <h4>" + works[i].description + "</h4>\
+            <h5 class='proj-text'>" + works[i].text + "</h5>\
           <span>\
         </a>\
       </div>\

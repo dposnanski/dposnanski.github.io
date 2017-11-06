@@ -21,8 +21,7 @@ h3: 8ad562
 
 * {
   box-sizing: border-box;
-  /*border: 1px solid black;
-  */
+  /*border: 1px solid black;*/
 }
 
 body {
@@ -32,6 +31,9 @@ body {
   /*padding-top: 0;*/
   position: relative;
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  padding-top: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -45,8 +47,6 @@ h1,
 h2,
 h3 {
   font-family: "Jura", "Lucida Bright", Georgia, serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -126,6 +126,11 @@ section {
   border: 1px solid #2A231B;
 }
 
+.btn-default:hover {
+  background-color: #D4FC79;
+  border: 1px solid #fff;
+  color: #fff;
+}
 
 /**** Navbar ****/
 
@@ -203,9 +208,6 @@ section {
 
 #home {
   background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 .home-text {
@@ -248,6 +250,7 @@ svg {
 
 .cv .btn-lg {
   background-color: #8ad562;
+  border: 1px solid #8ad562;
 }
 
 .cv .modal-content {
@@ -308,15 +311,11 @@ svg {
   padding-bottom: 1em;
 }
 
-#projects {
-  float: none;
-  margin: 0 auto;
-}
-
 .work-img {
   display: block;
-  max-width: 800px;
+  margin: 1em auto;
   position: relative;
+  max-width: 500px;
 }
 
 .work-logo {
@@ -325,15 +324,23 @@ svg {
 
 .info {
   position: absolute;
-  bottom: 28%;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
   color: #000;
   font-weight: bold;
-  letter-spacing: 0.0234em;
   line-height: 1.6;
   display: none;
   background-color: rgba(242, 242, 242, 0.9);
   text-align: center;
-  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.skill-img {
+  padding: 0 5px;
 }
 
 .proj-title {
@@ -341,10 +348,13 @@ svg {
   font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #8AD562;
 }
 
-.skill-img {
-  padding: 0 5px;
+.proj-text {
+  padding: 1em;
+  font-size: 1.6rem;
 }
 
 /**** Contact ****/
@@ -356,6 +366,10 @@ svg {
 .contact-form a:hover {
   color: #8AD562;
   text-decoration: none;
+}
+
+.checkbox {
+  margin-top: 0;
 }
 
 /**** Footer ****/
@@ -448,216 +462,13 @@ footer {
   color: #2A231B;
 }
 
-.privacy-text h2,
+.privacy-text h2 {
+  text-align: center;
+}
+
+.privacy-text h3,
 .privacy-text ul li,
-.privacy-text h5 {
+.privacy-text p {
   text-align: left;
   line-height: 1.76em;
-}
-
-/* Large desktops and laptops */
-
-@media (min-width: 1200px) {
-  .home-text {
-    background-color: transparent;
-  }
-
-  .home-text h1 {
-    font-size: 5em;
-    text-align: left;
-  }
-
-  .home-description {
-    text-align: left;
-    font-size: 2.05em;
-  }
-
-  #who {
-    padding: 0 15px 0 1em;
-  }
-
-  #table {
-    padding: 0 0 0 15px;
-  }
-
-}
-
-/* Landscape tablets and medium desktops */
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  #home {
-    background: url('../img/me.jpg') 10% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  }
-
-  .home-text h1 {
-    font-size: 5em;
-    text-align: left;
-  }
-
-  .home-description {
-    text-align: left;
-    font-size: 3em;
-  }
-
-  #who {
-    padding: 0 15px 0 0;
-  }
-
-  #table {
-    padding: 0 0 0 15px;
-  }
-
-  .projects {
-    padding: 0 0 1em 1em;
-  }
-}
-
-/* Portrait tablets and small desktops */
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #home {
-    background: url('') 100% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  }
-
-  .home-text {
-    background-color: rgba(255, 255, 255, .45);
-  }
-
-  .home-text h1 {
-    font-size: 7em;
-    text-align: center;
-  }
-
-  .home-description {
-    text-align: center;
-    font-size: 3em;
-  }
-
-  #resume {
-    padding-left: 3em;
-  }
-
-  .projects {
-    padding: 0 0 1em 1em;
-  }
-
-}
-
-/* Landscape phones and portrait tablets */
-
-@media (max-width: 767px) {
-  #home {
-    background: url('') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  }
-
-  .home-text {
-    background-color: rgba(255, 255, 255, .45);
-  }
-
-  .home-text h1 {
-    font-size: 3.75em;
-    text-align: center;
-  }
-
-  .home-description {
-    font-size: 1.75em;
-    text-align: center;
-  }
-
-  .projects {
-    padding: 0 0 1em 1em;
-  }
-}
-
-/* Portrait phones and smaller */
-
-@media (max-width: 480px) {
-  #home {
-    background: url('../img/me.jpg') 50% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  }
-
-  .home-text {
-    background-color: rgba(255, 255, 255, .45);
-  }
-
-  .home-text h1 {
-    padding-bottom: 0.15em;
-  }
-
-  .home-description {
-    padding-bottom: 0;
-  }
-
-  h1 {
-    font-size: 3.75em;
-    text-align: center;
-  }
-
-  p {
-    font-size: 1.75em;
-    text-align: center;
-  }
-
-  #about {
-    margin: 0 15px;
-    text-align: center;
-  }
-
-  .projects {
-    padding: 1em;
-  }
-}
-
-/*navbar-inverse .navbar-nav > .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 60px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 1.5em;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(1, 1, 1, .9);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  }
-
-  .dropdown {
-    margin-top: -2px;
-  }
-
-  .dropdown-menu {
-    top: 81.6px;
-    font-size: 1em;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: inherit;
-  }
-
-  .navbar-collapse.collapse.in {
-    min-height: 96vh;
-    font-size: 3em;
-    text-align: center;
-    transition: width 2s linear 1s;
-  }
-
-  .navbar-nav > li > a {
-    line-height: 15vh;
-  }
-
-  .nav > li > a.lang-inline {
-    display: inline;
-    line-height: 3em;
-  }*/
-
 }
