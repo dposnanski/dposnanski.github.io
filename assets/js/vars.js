@@ -1,12 +1,10 @@
 var works = [
   {
-    title: "El Jard&iacute;n Vegano",
-    description: "WordPress Website Design & Theme Customization",
+    title: "El Jardín",
+    description: "WordPress Website Design",
     pic: "../assets/img/relaunch.png",
-    alt: "WordPress Website Design: El Jard&iacute;n Vegano",
-    web: "https://www.eljardinvegano.com",
-    text: "Online e-commerce site dedicated to promoting vegan products across Mexico. The project was built on Prestashop, and later redesigned and migrated to WordPress. I also worked on the  translation of the product descriptions and did some of the products' photography. Click to go to the website, it will open in a new tab.",
-    link: "eljardinvegano.com"
+    alt: "WordPress Website Design: El Jardín Vegano",
+    web: "jardin.html"
   },
   /*{
     title: "Qeep",
@@ -15,6 +13,7 @@ var works = [
     alt: "App Translation: Qeep",
     web: "qeep.html"
   },
+  {
     title: "Jobfox",
     description: "App Translation",
     pic: "../assets/img/jobfox.png",
@@ -23,12 +22,10 @@ var works = [
   },*/
   {
     title: "Nocturnalia",
-    description: "Ruby on Rails Website Development",
+    description: "Something Cool",
     pic: "../assets/img/nocturnalia.png",
-    alt: "Website Development: Nocturnalia",
-    web: "../assets/img/noctuweb.png",
-    text: "Online e-commerce site with abstract and nocturnal inspired designs. The website is currently under construction and the actual product images are being worked on. Click to view a screenshot of the product page, it will open in a new tab.",
-    link: "eljardinvegano.com"
+    alt: "Web Development: Nocturnalia",
+    web: "nocturnalia.html"
   }
 ];
 
@@ -37,14 +34,14 @@ var services = [
     title: "Translation",
     description: "I specialize in Spanish translation, specifically multimedia content such as websites, videos, software, and video games. If you need subtitling, dubbing, localization, transcreation, or proofreading services, I can help you!",
     button: "Request Quote",
-    web: "#contact",
+    web: "translation.html",
     startPrice: ""
   },
   {
     title: "Web Development",
     description: "I can help you get an astonishingly cool website. Whether it's for a non-profit project, an e-commerce website, a blog, or a professional website showcasing your skills and services, I guarantee you will love the design!",
     button: "Request Quote",
-    web: "#contact",
+    web: "webdev.html",
     startPrice: ""
   }
 ];
