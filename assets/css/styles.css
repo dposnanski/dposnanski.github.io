@@ -248,6 +248,7 @@ svg {
 
 .cv .btn-lg {
   background-color: #8ad562;
+  border-color: transparent;
 }
 
 .cv .modal-content {
