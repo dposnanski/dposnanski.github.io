@@ -2,28 +2,28 @@ var works = [
   {
     title: "El Jardín",
     description: "WordPress Website Design",
-    pic: "../assets/img/relaunch.png",
+    pic: "../assets/img/relaunch.jpg",
     alt: "WordPress Website Design: El Jardín Vegano",
     web: "jardin.html"
   },
   /*{
     title: "Qeep",
     description: "App Translation",
-    pic: "../assets/img/qeep.png",
+    pic: "../assets/img/qeep.jpg",
     alt: "App Translation: Qeep",
     web: "qeep.html"
   },
   {
     title: "Jobfox",
     description: "App Translation",
-    pic: "../assets/img/jobfox.png",
+    pic: "../assets/img/jobfox.jpg",
     alt: "App Translation: Jobfox",
     web: "jobfox.html"
   },*/
   {
     title: "Nocturnalia",
     description: "WordPress Website Design",
-    pic: "../assets/img/nocturnalia.png",
+    pic: "../assets/img/nocturnalia.jpg",
     alt: "WordPress Website Design: Nocturnalia",
     web: "nocturnalia.html"
   }
