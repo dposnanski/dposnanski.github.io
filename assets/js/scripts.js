@@ -176,7 +176,7 @@ $(document).ready(function () {
   var i = 0;
   while (works[i]) {
     $("#projects").append("\
-      <div class='col-sm-6 col-md-4 col-lg-3 projects'>\
+      <div class='col-sm-6'>\
         <a href='" + works[i].web + "' class='work-img'>\
           <img class='img-responsive work-logo' src='" + works[i].pic + "' alt='" + works[i].alt + "'>\
           <span class='info'>\

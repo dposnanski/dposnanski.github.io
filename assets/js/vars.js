@@ -22,9 +22,9 @@ var works = [
   },*/
   {
     title: "Nocturnalia",
-    description: "Something Cool",
+    description: "WordPress Website Design",
     pic: "../assets/img/nocturnalia.png",
-    alt: "Web Development: Nocturnalia",
+    alt: "WordPress Website Design: Nocturnalia",
     web: "nocturnalia.html"
   }
 ];
