@@ -182,7 +182,7 @@ $(document).ready(function () {
           <span class='info'>\
             <h3 class='proj-title'>" + works[i].title + "</h3>\
             <p>" + works[i].description + "</p>\
-          <span>\
+          </span>\
         </a>\
       </div>\
     ");

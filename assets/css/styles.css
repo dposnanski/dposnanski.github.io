@@ -74,7 +74,7 @@ hr {
 p,
 .form-check-inbox {
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: #2A231B;
 }
 
@@ -284,11 +284,7 @@ svg {
 
 /**** Services ****/
 
-#services,
-#contact {
-  background-color: #D4FC79;
-}
-
+/*
 #services-detail {
   float: none;
   margin: 0 auto;
@@ -307,7 +303,7 @@ svg {
 
 .services-description {
   padding-bottom: 1em;
-}
+}*/
 
 /**** Work ****/
 
@@ -329,6 +325,7 @@ svg {
 
 .work-logo {
   border-radius: 25px;
+  margin-bottom: 10px;
 }
 
 .info {
@@ -356,18 +353,30 @@ svg {
   padding: 0 5px;
 }
 
+.port-content {
+  padding-left: 1em;
+}
+
 .port-img {
   padding-top: 1em;
   width: 95%;
   margin: 0 auto;
 }
 
-.port-txt {
+.fa-ul {
   padding-left: 1em;
+}
+
+.port-txt {
   font-size: 1.5em;
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
 }
 
 /**** Contact ****/
+
+#contact {
+  background-color: #D4FC79;
+}
 
 .contact-details {
   padding-bottom: 1em;
@@ -376,6 +385,10 @@ svg {
 .contact-form a:hover {
   color: #8AD562;
   text-decoration: none;
+}
+
+.contact-intro {
+  margin: 0 15px 30px 15px;
 }
 
 /**** Footer ****/
@@ -506,17 +519,17 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #home {
-    background: url('../img/me.jpg') 10% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    /*background: url('../img/me.jpg') 10% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);*/
   }
 
   .home-text h1 {
-    font-size: 5em;
+    font-size: 4em;
     text-align: left;
   }
 
   .home-description {
     text-align: left;
-    font-size: 3em;
+    font-size: 1.79em;
   }
 
   #who {
@@ -536,7 +549,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991px) {
   #home {
-    background: url('') 100% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background: url('../img/me.jpg') 60% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   }
 
   .home-text {
@@ -544,13 +557,13 @@ footer {
   }
 
   .home-text h1 {
-    font-size: 7em;
+    font-size: 6em;
     text-align: center;
   }
 
   .home-description {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
   }
 
   #resume {
@@ -567,7 +580,7 @@ footer {
 
 @media (max-width: 767px) {
   #home {
-    background: url('') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background: url('../img/me.jpg') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   }
 
   .home-text {
@@ -593,7 +606,7 @@ footer {
 
 @media (max-width: 480px) {
   #home {
-    background: url('../img/me.jpg') 50% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background: url('../img/me.jpg') 40% 30% no-repeat, linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   }
 
   .home-text {
