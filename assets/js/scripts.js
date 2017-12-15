@@ -65,10 +65,10 @@ $(document).ready(function () {
   });
 
   //Contact
-  //var base64_email = 'aGVsbG9AZGVsaWUubWU=';
-  //var base_url = '//formspree.io/';
-  //var action = base_url + atob(base64_email);
-  //$('#contact-form').attr('action', action);
+  var base64_email = 'aGVsbG9AZGVsaWUubWU=';
+  var base_url = '//formspree.io/';
+  var action = base_url + atob(base64_email);
+  $('#contact-form').attr('action', action);
 
   //Button
   /*$("#button").on("click", function () {
