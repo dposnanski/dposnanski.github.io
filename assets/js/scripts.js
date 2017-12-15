@@ -65,10 +65,10 @@ $(document).ready(function () {
   });
 
   //Contact
-  var base64_email = 'aGVsbG9AZGVsaWUubWU=';
-  var base_url = '//formspree.io/';
-  var action = base_url + atob(base64_email);
-  $('#contact-form').attr('action', action);
+  //var base64_email = 'aGVsbG9AZGVsaWUubWU=';
+  //var base_url = '//formspree.io/';
+  //var action = base_url + atob(base64_email);
+  //$('#contact-form').attr('action', action);
 
   //Button
   /*$("#button").on("click", function () {
@@ -114,7 +114,7 @@ $(document).ready(function () {
   });*/
 
   //Services
-  var i = 0;
+  /*var i = 0;
   while (services[i]) {
     $("#services-detail").append("\
       <div class='col-md-6 services-columns'>\
@@ -125,7 +125,7 @@ $(document).ready(function () {
       </div>\
     ");
     i++;
-  }
+  }*/
 
   //About Skills
   var i = 0;
