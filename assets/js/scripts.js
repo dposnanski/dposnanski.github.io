@@ -65,53 +65,10 @@ $(document).ready(function () {
   });
 
   //Contact
-  var base64_email = 'aGVsbG9AZGVsaWUubWU=';
-  var base_url = '//formspree.io/';
-  var action = base_url + atob(base64_email);
-  $('#contact-form').attr('action', action);
-
-  //Button
-  /*$("#button").on("click", function () {
-    var validateData = function (id) {
-      var field = $("#" + id).val();
-      if (field === "") {
-        $("#" + id).css("border", "1px solid #0DD6C7");
-        $("#visible-" + id).html("This field needs to be completed").show();
-        return false;
-      } else {
-        console.log(id + ": " + field);
-        $("#visible-" + id).hide();
-        return true;
-      }
-    };
-
-    var name = validateData("name");
-    var email = validateData("email");
-    var message = validateData("message");
-    var data = validateData("data");
-    if (!name || !email || !message) {
-      $("#phone").css("border", "1px solid #CCC");
-    } else {
-      $(".message").hide();
-      $(".email").hide();
-      $(".name").hide();
-      $("#char-count").hide();
-      $("#visible-message").html("Great! Thanks for sending me a message, I'll get back to you soon :-)").show();
-    }
-    return false;
-  });*/
-
-  //Character Count
-  /*$(".message").on("keyup", function () {
-    var charCount = $(".message").val().length;
-    $("#char-count").html("You have typed " + charCount + " characters.");
-    if (charCount > 50) {
-      $("#char-count").css("color", "red");
-    } else {
-      $("#char-count").css("color", "#000");
-    }
-    console.log(charCount);
-  });*/
+  //var base64_email = 'aGVsbG9AZGVsaWUubWU=';
+  //var base_url = '//formspree.io/';
+  //var action = base_url + atob(base64_email);
+  //$('#contact-form').attr('action', action);
 
   //Services
   /*var i = 0;
@@ -208,27 +165,5 @@ $(document).ready(function () {
     ");
     i++;
   }
-
-
-  //Parallax Effect
-  /*var $window = $(window);
-
-  $('section[data-type="background"]').each(function () {
-
-    var $bgobj = $(this);
-
-    $(window).scroll(function () {
-
-      var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-
-      var coords = '50% ' + yPos + 'px';
-
-      $bgobj.css({
-        backgroundPosition: coords
-      });
-
-    });
-
-  });*/
 
 });

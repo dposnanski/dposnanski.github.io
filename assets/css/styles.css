@@ -311,6 +311,11 @@ svg {
   padding-bottom: 1em;
 }
 
+.about-description a {
+  color: #8AD562;
+  text-decoration: none;
+}
+
 #projects {
   float: none;
   margin: 0 auto;

@@ -161,16 +161,15 @@
       <!--end header -->
       <div class="row">
         <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-          <p class="about-description">I can help you get an astonishingly cool website. Whether it's for a non-profit project, an e-commerce website, a blog, or a professional website showcasing your skills and services, I guarantee you will love the design!</p>
-          <p class="about-description">The websites I create are built on WordPress. Why do I recommend WordPress for my clients' websites? Because after the website is finished and has been delivered to you, it is fairly straightforward to use (and, of course, I will show you how!). WordPress will help you keep your customers up-to-date with what's going on in your company. You will also be able to access a user-friendly dashboard and manage your media, products, portfolio, blog posts, and much more.</p>
+          <p class="about-description">I can help you get a super-cool-looking website. Whether it's for a non-profit project, an e-commerce website, a blog, or a professional website showcasing your skills and services, I guarantee you will love it! I like building my clients' websites on Wordpress because once the website is finished and has been delivered to you, it is fairly straightforward to use (and, of course, I will show you how!), and you will be able to access a dashboard where you can manage your media, products, portfolio, blog posts, and much more without effort.</p>
 
-          <p class="about-description">Check out my portfolio below to see some examples of work I've done, if you have any questions or need something different, feel free to send me an email with the requirements of your project. </p>
+          <p class="about-description">Check out some examples of work I've done, just click on the image and you'll be able to see more details about each project. If you have any questions or need something different, feel free to <a href="#contact">send me an email</a> with the requirements of your project. </p>
         </div>
       </div>
       <!--<div class="col-xs-12 col-sm-offset-1 col-sm-10" id="services-detail">
         </div>-->
       <div class="row">
-        <div class="col-xs-12 col-sm-offset-1 col-sm-10" id="projects">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8" id="projects">
         </div>
       </div>
       <!-- end row -->
@@ -208,36 +207,28 @@
         <div class="col-xs-12 col-sm-offset-1 col-sm-10 contact-form">
           <p class="contact-intro">Have any questions? Do you want to start working with me? Contact me right away! I am currently available for new and interesting projects. Let’s change the world together!</p>
           <form action="HIDDEN" method="post" id="contact-form" role="form">
-            <div class="form-group col-xs-12">
+            <div class="form-group col-xs-12 col-md-6">
               <label for="name" class="sr-only">Name *</label>
-              <input title="This is a required field." required="required" placeholder="What's your name?" class="form-control name" type="text" id="name" name="name">
+              <input required placeholder="What's your name?" class="form-control name input-lg" type="text" id="name" name="name">
             </div>
-            <div class="form-group col-xs-12">
+            <div class="form-group col-xs-12 col-md-6">
               <label for="email" class="sr-only">Email *</label>
-              <input required="required" placeholder="What's your email?" class="form-control email" type="email" id="email" name="_replyto">
-            </div>
-            <div class="form-group col-xs-12">
-              <label for="subject" class="sr-only">Subject *</label>
-              <select class="form-control" required="required" name="subject">
-                <option>Translation related services</option>
-                <option>Web development services</option>
-                <option>Other</option>
-              </select>
+              <input required placeholder="What's your email?" class="form-control email input-lg" type="email" id="email" name="_replyto">
             </div>
             <div class="form-group col-xs-12">
               <label for="message" class="sr-only">I'll be happy to hear from you, let me know your thoughts!</label>
-              <textarea title="Please fill this out." required="required" placeholder="I'll be happy to hear from you, let me know your thoughts!" class="form-control message" cols="15" rows="15" id="message" name="message"></textarea>
+              <textarea required placeholder="I'll be happy to hear from you, let me know your thoughts!" class="form-control message input-lg" cols="10" rows="10" id="message" name="message"></textarea>
             </div>
-
             <div class="form-group col-xs-12 checkbox">
               <label>
-              <input type="checkbox" value="" required="required" id="data" class="form-check-inbox">I agree to the treatment of my personal data according to the <a data-toggle="modal" data-target=".privacy-modal">Privacy Policy</a>.*
+              <input type="checkbox" value="" required id="data" class="form-check-inbox">I agree to the treatment of my personal data according to the <a data-toggle="modal" data-target=".privacy-modal">Privacy Policy</a>.*
               </label>
             </div>
             <!-- <div class="form-group col-sm-12 g-recaptcha" data-sitekey="6LdALTYUAAAAAC6BNld9MDRCcSeieULV2etwDV1q"></div>-->
             <div class="form-group col-xs-12">
               <input type="hidden" name="_next" value="#" />
               <button type="submit" class="btn btn-primary btn-lg btn-block" value="send" id="button">Send</button>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
             </div>
           </form>
         </div>
@@ -300,6 +291,7 @@
   <script src="assets/js/jquery-2.2.4.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/vars.js"></script>
+  <script src="assets/js/formspree.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/07439a54c4.js"></script>
 </body>
