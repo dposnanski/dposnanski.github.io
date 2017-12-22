@@ -61,10 +61,8 @@ h5 {
   font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
 }
 
-h4,
-li {
+h4 {
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
-  list-style-type: none;
 }
 
 hr {
@@ -72,6 +70,7 @@ hr {
 }
 
 p,
+li,
 .form-check-inbox {
   font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
   font-size: 1.75em;
@@ -111,8 +110,8 @@ section {
 }
 
 .btn-primary {
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #F7FCF7;
+  border: 1px solid #F7FCF7;
 }
 
 .btn-primary:hover,
@@ -129,8 +128,32 @@ section {
 
 .btn-default {
   background-color: transparent;
-  border: 1px solid #2A231B;
+  background-color: #8ad562;
+  border-color: transparent;
 }
+
+.btn-default:hover {
+  color: #F7FCF7;
+  background-color: #2A231B;
+  border-color: #2A231B;
+}
+
+.cc-floating.cc-theme-classic {
+  border: 1px solid #2A231B;
+  font-family: "Economica", "Trebuchet MS", Verdana, Tahoma, sans-serif;
+}
+
+a.cc-allow,
+a.cc-dismiss {
+  text-transform: uppercase;
+  font-family: "Jura", "Trebuchet MS", Verdana, Tahoma, sans-serif, sans-serif;
+}
+
+a.cc-allow,
+a.cc-btn.cc-dismiss:hover {
+  text-decoration: none;
+}
+
 
 
 /**** Navbar ****/
@@ -142,6 +165,9 @@ section {
   /*margin-bottom: 0;*/
 }
 
+.navbar--is-scrolled {
+  margin-top: 0!important;
+}
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
@@ -150,9 +176,8 @@ section {
   transition: background-color 450ms;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > .nav-link {
   color: #FFF;
-  font-size: 1.6em;
   letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
@@ -250,11 +275,6 @@ svg {
   text-align: center;
   margin: 1em;
   padding-top: 0;
-}
-
-.cv .btn-lg {
-  background-color: #8ad562;
-  border-color: transparent;
 }
 
 .cv .modal-content {
@@ -472,25 +492,6 @@ footer {
 
 .footnotes a:hover {
   color: #D4FC79;
-}
-
-.credits-modal h5,
-.privacy-modal p {
-  color: #2A231B;
-  text-align: left;
-  padding: 10px;
-}
-
-.privacy-text {
-  padding: 10px;
-  color: #2A231B;
-}
-
-.privacy-text h2,
-.privacy-text ul li,
-.privacy-text h5 {
-  text-align: left;
-  line-height: 1.76em;
 }
 
 /* Large desktops and laptops */

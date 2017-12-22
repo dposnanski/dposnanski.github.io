@@ -43,6 +43,8 @@ $(document).ready(function () {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));*/
 
+  /* ,*/
+
   // Smooth scrolling
   var $root = $('html, body');
   $('.navbar-nav a').click(function () {
@@ -89,8 +91,8 @@ $(document).ready(function () {
   while (skills[i]) {
     $("#skills-list").append("\
       <div class='col-xs-3 col-sm-3 col-md-2 col-xl-2 skill-img'>\
-        " + skills[i].image + "\
-        <h5>" + skills[i].name + "</h5>\
+        <img src='" + skills[i].image + "' title='" + skills[i].title + "' class='img-responsive img-lang text-center'>\
+        <h5 class='text-center'>" + skills[i].name + "</h5>\
       </div>\
     ");
     i++;
@@ -166,4 +168,57 @@ $(document).ready(function () {
     i++;
   }
 
+});
+
+
+
+window.addEventListener("load", function () {
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#f7fcf7",
+        "text": "#2a231b"
+      },
+      "button": {
+        "background": "#8ad562",
+        "text": "#2a231b"
+      }
+    },
+    "theme": "classic",
+    "position": "top",
+    "static": true,
+    "type": "opt-in",
+    "content": {
+      "message": "This website uses cookies to ensure you get the best experience on our website. Third-party cookies, such as those from Google (Analytics, reCAPTCHA) are also used.",
+      "deny": "Decline",
+      "href": "cookies.html"
+    },
+    onPopupOpen: function () {
+      pushDown(this.element.clientHeight);
+    },
+    onPopupClose: function () {
+      pushDown(0);
+    }
+  });
+
+  window.addEventListener("scroll", function () {
+    var navbar = document.getElementsByClassName("navbar-fixed-top")[0];
+
+    if (window.pageYOffset === 0) {
+      navbar.classList.remove("navbar--is-scrolled");
+    } else {
+      navbar.classList.add("navbar--is-scrolled");
+    }
+  });
+
+  function pushDown(height, transition) {
+    var navbar = document.getElementsByClassName("navbar-fixed-top")[0];
+
+    if (transition) {
+      navbar.style.transition = 'all 1s';
+    } else {
+      navbar.style.transition = 'all 1s';
+    }
+    navbar.style.marginTop = height + 'px';
+  }
 });
