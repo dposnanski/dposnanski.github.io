@@ -58,19 +58,19 @@ $(document).ready(function () {
   });
 
   //Tooltips
-  $(function () {
+ /* $(function () {
     $("#course").tooltip();
   });
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
-  });
+  });*/
 
   //Contact
-  //var base64_email = 'aGVsbG9AZGVsaWUubWU=';
-  //var base_url = '//formspree.io/';
-  //var action = base_url + atob(base64_email);
-  //$('#contact-form').attr('action', action);
+  var base64_email = 'aGVsbG9AZGVsaWUubWU=';
+  var base_url = '//formspree.io/';
+  var action = base_url + atob(base64_email);
+  $('#contact-form').attr('action', action);
 
   //Services
   /*var i = 0;
@@ -223,11 +223,11 @@ window.addEventListener("load", function () {
 
 
 //Recaptcha validation
-function recaptchaCallback() {
+/*function recaptchaCallback() {
         var btnSubmit = document.getElementById("btnSubmit");
 
         if ( btnSubmit.classList.contains("hidden") ) {
             btnSubmit.classList.remove("hidden");
             btnSubmitclassList.add("show");
         }
-    }
+    }*/

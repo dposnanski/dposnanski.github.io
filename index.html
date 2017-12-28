@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <link href="https://use.fontawesome.com/07439a54c4.css" media="all" rel="stylesheet">
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 </head>
@@ -208,7 +208,7 @@
       <div class="row contact-details">
         <div class="col-xs-12 col-sm-offset-1 col-sm-10 contact-form">
           <p class="contact-intro">Have any questions? Do you want to start working with me? Contact me right away! I am currently available for new and interesting projects. Let’s change the world together!</p>
-          <form action="HIDDEN" method="post" id="contact-form" role="form">
+          <form action="HIDDEN" method="POST" id="contact-form" role="form">
             <div class="form-group col-xs-12 col-md-6">
               <label for="name" class="sr-only">Name *</label>
               <input required placeholder="What's your name?" class="form-control name input-lg" type="text" id="name" name="name">
@@ -219,18 +219,18 @@
             </div>
             <div class="form-group col-xs-12">
               <label for="message" class="sr-only">I'll be happy to hear from you, let me know your thoughts!</label>
-              <textarea required placeholder="I'll be happy to hear from you, let me know your thoughts!" class="form-control message input-lg" cols="2" rows="8" id="message" name="message"></textarea>
+              <textarea required placeholder="I'll be happy to hear from you, let me know your thoughts!" class="form-control message input-lg" rows="8" id="message" name="message"></textarea>
             </div>
             <div class="form-group col-xs-12 col-sm-5 checkbox">
               <label>
               <input type="checkbox" value="" required id="data" class="form-check-inbox">I agree to the treatment of my personal data according to the <a href="privacy.html" target="_blank">Privacy Policy</a>.*
               </label>
             </div>
-            <div class="form-group col-xs-12 col-sm-7 g-recaptcha" data-sitekey="6LdALTYUAAAAAC6BNld9MDRCcSeieULV2etwDV1q" data-callback="recaptchaCallback"></div>
+           <!-- <div class="form-group col-xs-12 col-sm-7 g-recaptcha" data-sitekey="6LdALTYUAAAAAC6BNld9MDRCcSeieULV2etwDV1q" data-callback="recaptchaCallback"></div>-->
             <div class="form-group col-xs-12" id="submit">
+              <input name="_formsubmit_id" type="text" style="display:none">
               <input type="hidden" name="_next" value="#" />
-              <button type="submit" class="btn btn-primary btn-lg btn-block hidden" value="send" id="btnSubmit">Send</button>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+              <button type="submit" class="btn btn-primary btn-lg btn-block" value="Submit" id="btnSubmit">Send</button>
             </div>
           </form>
         </div>
@@ -263,7 +263,6 @@
   <script src="assets/js/jquery-2.2.4.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/vars.js"></script>
-  <script src="assets/js/formspree.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/07439a54c4.js"></script>
 </body>
