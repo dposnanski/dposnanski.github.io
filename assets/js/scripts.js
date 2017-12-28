@@ -171,7 +171,7 @@ $(document).ready(function () {
 });
 
 
-
+//Cookie consent
 window.addEventListener("load", function () {
   window.cookieconsent.initialise({
     "palette": {
@@ -205,9 +205,9 @@ window.addEventListener("load", function () {
     var navbar = document.getElementsByClassName("navbar-fixed-top")[0];
 
     if (window.pageYOffset === 0) {
-      navbar.classList.remove("navbar--is-scrolled");
+      navbar.classList.remove("navbar-scrolled");
     } else {
-      navbar.classList.add("navbar--is-scrolled");
+      navbar.classList.add("navbar-scrolled");
     }
   });
 
@@ -222,3 +222,14 @@ window.addEventListener("load", function () {
     navbar.style.marginTop = height + 'px';
   }
 });
+
+
+//Recaptcha validation
+function recaptchaCallback() {
+        var btnSubmit = document.getElementById("btnSubmit");
+
+        if ( btnSubmit.classList.contains("hidden") ) {
+            btnSubmit.classList.remove("hidden");
+            btnSubmitclassList.add("show");
+        }
+    }
