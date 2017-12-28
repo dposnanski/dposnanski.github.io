@@ -185,23 +185,21 @@ window.addEventListener("load", function () {
       }
     },
     "theme": "classic",
-    "position": "top",
-    "static": true,
-    "type": "opt-in",
+    "type": "opt-out",
     "content": {
       "message": "This website uses cookies to ensure you get the best experience on our website. Third-party cookies, such as those from Google (Analytics, reCAPTCHA) are also used.",
-      "deny": "Decline",
+      "deny": "Accept",
       "href": "cookies.html"
     },
-    onPopupOpen: function () {
+    /*onPopupOpen: function () {
       pushDown(this.element.clientHeight);
     },
     onPopupClose: function () {
       pushDown(0);
-    }
+    }*/
   });
 
-  window.addEventListener("scroll", function () {
+/* window.addEventListener("scroll", function () {
     var navbar = document.getElementsByClassName("navbar-fixed-top")[0];
 
     if (window.pageYOffset === 0) {
@@ -220,7 +218,7 @@ window.addEventListener("load", function () {
       navbar.style.transition = 'all 1s';
     }
     navbar.style.marginTop = height + 'px';
-  }
+  }*/
 });
 
 
